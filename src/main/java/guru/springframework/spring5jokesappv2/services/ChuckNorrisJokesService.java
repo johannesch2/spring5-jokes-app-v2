@@ -2,9 +2,9 @@ package guru.springframework.spring5jokesappv2.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class ChuckNorrisJokesService implements RandomJokesService {
 
     final private ChuckNorrisQuotes chuckNorrisQuotes;

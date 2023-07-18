@@ -1,8 +1,8 @@
 package guru.springframework.spring5jokesappv2.services;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public interface RandomJokesService {
 
     public String getRandomJoke();
