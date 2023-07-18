@@ -1,5 +1,6 @@
 package guru.springframework.spring5jokesappv2.controllers;
 
+import guru.springframework.spring5jokesappv2.domain.Joke;
 import guru.springframework.spring5jokesappv2.services.RandomJokesService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +17,7 @@ public class JokesController {
 
     @RequestMapping("/")
     public final String getRandomJoke(Model model) {
-        model.addAttribute("joke", randomJokesService.getRandomJoke());
+        model.addAttribute("joke", new Joke(randomJokesService.getRandomJoke()));
         return "index";
     }
 }
